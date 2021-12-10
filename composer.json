@@ -4,6 +4,9 @@
   "homepage": "https://creativestyle.de",
   "license": "OSL-3.0",
   "type": "magento2-module",
+  "require": {
+    "magepal/magento2-googletagmanager": "^2.3.0"
+  },
   "autoload": {
     "files": [
       "registration.php"
