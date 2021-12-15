@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="magepal_datalayer">
+        <observer name="add_category_data" instance="MageSuite\MagePalGoogleTagManagerAdcell\Observer\AddCategoryData" />
+        <observer name="add_search_data" instance="MageSuite\MagePalGoogleTagManagerAdcell\Observer\AddSearchData" />
+    </event>
+</config>
