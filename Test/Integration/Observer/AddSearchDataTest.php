@@ -40,12 +40,10 @@ class AddSearchDataTest extends \Magento\TestFramework\TestCase\AbstractControll
         $this->dispatch('/catalogsearch/result/index');
         $body = $this->getResponse()->getBody();
         $expectedString = $this->serializer->serialize([
-           'search' => [
-               'queryText' => 'simple',
-               'productIds' => '333',
-               'productSeparator' => \MageSuite\MagePalGoogleTagManagerAdcell\Model\DataLayer\DataProviderInterface::PRODUCT_SEPARATOR
-           ],
-           'event' => 'searchPage'
+            'event' => 'searchPage',
+            'search_term' => 'simple',
+            'productIds' => '333',
+            'productSeparator' => \MageSuite\MagePalGoogleTagManagerAdcell\Model\DataLayer\DataProviderInterface::PRODUCT_SEPARATOR
         ]);
 
         $this->assertStringContainsString($expectedString, $body);

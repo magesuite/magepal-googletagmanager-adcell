@@ -29,7 +29,7 @@ class SearchDataProvider implements DataProviderInterface
     public function getData(): array
     {
         $data = [
-            'queryText' => $this->searchHelper->getEscapedQueryText()
+            'search_term' => $this->searchHelper->getEscapedQueryText()
         ];
 
         return array_merge_recursive($data, $this->categoryDataProvider->getData());

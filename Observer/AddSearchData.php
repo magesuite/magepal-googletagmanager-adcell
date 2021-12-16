@@ -32,10 +32,9 @@ class AddSearchData implements \Magento\Framework\Event\ObserverInterface
         /** @var \MagePal\GoogleTagManager\Block\DataLayer $dataLayer **/
         $dataLayer = $observer->getData('dataLayer');
         $searchData = $this->searchDataProvider->getData();
-        $data = ['search' => $searchData];
         $dataLayer->addCustomDataLayerByEvent(
             \MagePal\GoogleTagManager\Model\DataLayerEvent::SEARCH_PAGE_EVENT,
-            $data
+            $searchData
         );
     }
 }
