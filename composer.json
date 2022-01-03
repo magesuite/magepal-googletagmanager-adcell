@@ -5,7 +5,7 @@
   "license": "OSL-3.0",
   "type": "magento2-module",
   "require": {
-    "magepal/magento2-googletagmanager": "^2.3.0"
+    "magepal/magento2-googletagmanager": "^2.5.1"
   },
   "autoload": {
     "files": [
