@@ -29,6 +29,7 @@ class SearchDataProvider implements DataProviderInterface
     public function getData(): array
     {
         $data = [
+            'event' => \MagePal\GoogleTagManager\Model\DataLayerEvent::SEARCH_PAGE_EVENT,
             'search_term' => $this->searchHelper->getEscapedQueryText()
         ];
 
