@@ -32,10 +32,6 @@
         </arguments>
     </type>
 
-    <type name="MagePal\GoogleTagManager\CustomerData\JsDataLayer">
-        <plugin name="add_recurring_customer_flag" type="MageSuite\MagePalGoogleTagManagerAdcell\Plugin\MagePal\GoogleTagManager\CustomerData\JsDataLayer\AddRecurringCustomerFlag"/>
-    </type>
-
     <type name="Magento\Catalog\Block\Product\ListProduct">
         <plugin name="set_product_ids_for_product_list_provider" type="MageSuite\MagePalGoogleTagManagerAdcell\Plugin\Catalog\Block\Product\ListProduct\SetProductIdsForProductListProvider"/>
     </type>
