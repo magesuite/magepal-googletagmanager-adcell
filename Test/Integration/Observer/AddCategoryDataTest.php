@@ -32,7 +32,7 @@ class AddCategoryDataTest extends \Magento\TestFramework\TestCase\AbstractContro
             'category' => [
                 'id' => '333',
                 'name' => 'Category 1',
-                'path' => '',
+                'path' => 'Category 1',
                 'productIds' => '333',
                 'productSeparator' => \MageSuite\MagePalGoogleTagManagerAdcell\Model\DataLayer\DataProviderInterface::PRODUCT_SEPARATOR
             ]
@@ -41,3 +41,4 @@ class AddCategoryDataTest extends \Magento\TestFramework\TestCase\AbstractContro
         $this->assertStringContainsString($expectedString, $body);
     }
 }
+
