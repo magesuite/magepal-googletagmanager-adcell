@@ -60,4 +60,3 @@ class AddCategoryDataTest extends \Magento\TestFramework\TestCase\AbstractContro
         $this->assertStringContainsString($expectedString, $body);
     }
 }
-
